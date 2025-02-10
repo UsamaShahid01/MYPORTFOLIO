@@ -7,7 +7,8 @@ import Navbar from './Components/Navbar'
 import Home from './Components//Pages/Home';
 import Project from './Components/Pages/Project';
 import Contact from './Components/Pages/Contact';
-import Services from './Components/pages/Services';
+import ContactForm from './Components/Pages/ContactForm';
+// import Services from './Components/pages/Services';
 
 
 function App() {
@@ -19,7 +20,8 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/project" element={<Project />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/services" element={<Services />} />
+        {/* <Route path="/services" element={<Services />} /> */}
+        <Route path="/contactForm" element={<ContactForm />} />
       </Routes>
     </div>
   )
