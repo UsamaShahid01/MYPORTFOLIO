@@ -1,0 +1,191 @@
+body {
+  /* background-image: linear-gradient(#9dddcc, #23acff); */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+.mainparent{
+  background-image: linear-gradient(#9dddcc, #23acff);
+  width:100%;
+}
+
+.parent{
+  /* background-color: black; */
+  color: black;
+  background-image: linear-gradient(#9dddcc, #23acff);
+  padding:48px;
+  margin:auto;
+  /* width:1200px; */
+  width:75%;
+
+}
+
+
+.parent p {
+  padding: 20px;
+  
+}
+.parent h1 {
+  color: indianred;
+  text-decoration: underline;
+  padding-left: 8px;
+    margin-left: 10px;
+    font-weight:800;
+    font-style:italic;
+}
+
+.WebsiteDevelopment {
+  margin:4px;
+  
+}
+
+.WebsiteDevelopment h1 {
+  /* display: flex; */
+  /* justify-content: start; */
+  font-size: 30px;
+  padding-left: 8px;
+    margin-left: 10px;
+}
+
+.WebsiteDevelopment p {
+  margin: 10px;
+  padding: 10px;
+
+}
+
+.ExpertiseinFrontendFrameworksandStyling {
+  margin: 4px;
+}
+
+.ExpertiseinFrontendFrameworksandStyling h1 {
+  /* display: flex; */
+  /* justify-content: center; */
+  font-size: 30px;
+  padding-left: 8px;
+    margin-left: 10px;
+}
+
+.ExpertiseinFrontendFrameworksandStyling p {
+  margin: 10px;
+  padding: 10px;
+}
+
+.StrongProblemSolvingSkills {
+  margin: 4px;
+}
+
+.StrongProblemSolvingSkills h1 {
+  /* display: flex; */
+  /* justify-content: center; */
+  font-size: 30px;
+}
+
+.StrongProblemSolvingSkills p {
+  margin: 10px;
+  padding: 10px;
+}
+
+.ComponentBasedDevelopment {
+  margin: 4px;
+}
+
+.ComponentBasedDevelopment h1 {
+  /* display: flex; */
+  /* justify-content: center; */
+  font-size: 30px;
+}
+
+.ComponentBasedDevelopment p {
+  margin: 10px;
+  padding: 10px;
+}
+
+.VersionControlandCollaboration {
+  margin: 4px;
+}
+
+.VersionControlandCollaboration h1 {
+  /* display: flex; */
+  /* justify-content: center; */
+  font-size: 30px;
+}
+
+.VersionControlandCollaboration p {
+  margin: 10px;
+  padding: 10px;
+}
+
+.PerformanceOptimization {
+  margin: 4px;
+}
+
+.PerformanceOptimization h1 {
+  /* display: flex; */
+  /* justify-content: center; */
+  font-size: 30px;
+}
+
+.PerformanceOptimization p {
+  margin: 10px;
+  padding: 10px;
+}
+
+.APIIntegration {
+  margin: 4px;
+}
+
+.APIIntegration h1 {
+  /* display: flex; */
+  /* justify-content: center; */
+  font-size: 30px;
+}
+
+.APIIntegration p {
+  margin: 10px;
+  padding: 10px;
+}
+
+.StateManagement {
+  padding:1px
+}
+
+.StateManagement h1 {
+  /* display: flex; */
+  /* justify-content: center; */
+  font-size: 30px;
+}
+
+.StateManagement p {
+  margin-left: 12px;
+  padding: 10px;
+}
+
+@media (max-width: 768px) {
+  .parent h1 {
+    font-size: 20px;
+  }
+
+  .parent p {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 425px) {
+  .parent h1 {
+    font-size: 18px;
+  }
+
+  .parent p {
+    font-size: 16px;
+  }
+
+  .parent{
+    padding:10px;
+    width:100%;
+  }
+}

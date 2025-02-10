@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+.home {
+  position: relative;
+  width: 100%;
+  min-height: 86.8vh;
+  background: linear-gradient(#9dddcc, #23acff);
+}
+
+.main-parent {
+  display: flex;
+  flex-direction: row;
+}
+
+.child-one {
+  width: 50%;
+}
+
+.child-one .welcome-to {
+  font-size: 35px;
+  color: black;
+}
+
+.child-one .usr {
+  font-size: 40px;
+  color: aliceblue;
+}
+
+.getstarted {
+  text-align: center;
+}
+
+.child-one p {
+  padding: 4px;
+  text-align: center;
+  margin: 50px;
+}
+.getstarted button {
+  color: white;
+  border-radius: 20px;
+  font-size: 20px;
+  font: bold;
+  margin:0px;
+  background-color: blue;
+}
+.child-two {
+  width: 50%;
+}
+
+.child-two img {
+  /* height:500px; */
+  /* margin-left:60px;
+  padding:10px */
+  max-width: 70%; /* Ensures image fits within 50% */
+  /* height: auto; */
+  display: block; /* Allows margin auto centering */
+  margin: auto;
+  margin-top:20px
+}
+
+@media (max-width: 1440px) {
+  /* height: 140vh; */
+}
+
+@media (max-width: 1024px) {
+  .main-parent {
+    flex-direction: column-reverse;
+  }
+  .child-one,
+  .child-two {
+    width: 100%;
+  }
+  .child-one p {
+    font-size: 20px;
+  }
+
+  .child-one button {
+    width: 30%;
+  }
+}
+
+@media (max-width: 425px) {
+  .child-one p {
+    font-size: 12px;
+  }
+
+  .getstarted {
+    display: flex;
+    justify-content: center;
+  }
+
+  .getstarted button {
+    font-size: 12px;
+    width: 100px;
+    padding-top: 8px 0px;
+  }
+
+  .child-two img {
+    padding: 20px;
+    width: 400px;
+  }
+
+  .child-one .welcome-to {
+    font-size: 28px;
+  }
+
+  .child-one .usr {
+    font-size: 28px;
+  }
+}
