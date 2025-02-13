@@ -473,7 +473,6 @@ button:hover {
     align-items: center;
 
   } 
-
   .email {
     padding: 0px;
     padding-top: 10px;
@@ -619,5 +618,16 @@ button:hover {
 
   .buttonsubmit  {
     margin-left:90px
+  }
+}
+
+@media (max-width: 375px) {
+  .contact-page {
+    min-height:86.8vh;
+  }
+
+  .section-one .get-in-touch{
+    font-size: 32px !important;
+    color:pink;
   }
 }

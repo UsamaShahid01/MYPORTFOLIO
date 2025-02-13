@@ -33,6 +33,7 @@
 
 .getstarted {
   text-align: center;
+  padding:10px
 }
 
 .child-one p {
@@ -111,5 +112,37 @@
 
   .child-one .usr {
     font-size: 28px;
+  }
+}
+
+@media (max-width: 375px) {
+  .child-one p {
+    font-size: 12px;
+  }
+
+  .getstarted {
+    display: flex;
+    justify-content: center;
+    margin-bottom:30px
+  }
+
+  .getstarted button {
+    font-size: 12px;
+    width: 100px;
+    padding-top: 8px 0px;
+  }
+
+  .child-two img {
+    padding: 20px;
+    width: 400px;
+  }
+
+  .child-one .welcome-to {
+    font-size: 24px;
+  }
+
+  .child-one .usr {
+    font-size: 24px;
+    margin-bottom:4px
   }
 }

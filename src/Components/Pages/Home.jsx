@@ -21,7 +21,7 @@ const Home = () => {
         <div className='child-one'>
           <div>
             <p>
-              <span className='welcome-to'>Welcome to</span>  <span className='usr'>Usama Shahid's website</span> your trusted source for innovative and secure web solutions.
+              <span className='welcome-to'>Welcome to</span>  <span className='usr'>Usama Shahid's website</span> Your trusted source for innovative and secure web solutions.
               With a passion for excellence, I specialize in crafting dynamic, user-friendly websites that deliver
               outstanding performance across all interfaces. My expertise in React front-end development ensures
               seamless, responsive, and visually engaging digital experiences.Explore my work and discover how I
