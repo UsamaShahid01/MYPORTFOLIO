@@ -16,7 +16,7 @@
 import { useState, useCallback, useEffect, useRef } from "react";
 import "./Project.css";
 
-
+``
 
 const App = () => {
 
@@ -43,12 +43,12 @@ const App = () => {
         {/* .,.,.,.,.,.,new.,.,.,.,., */}
 
 
-        <div  class="max-w-sm  overflow-hidden shadow-lg m-6 rounded-2xl  ">
-          <img onClick={password} class="w-full h-60 cursor-pointer" src="../public/Screenshot_40.png" />
+        <div class="max-w-sm  overflow-hidden shadow-lg m-6 rounded-2xl  ">
+          <img onClick={password} class="w-full h-60 cursor-pointer" src="/Screenshot_40.png" />
           <div class="px-6 py-4">
             <div onClick={password} class="font-bold text-xl mb-2 cursor-pointer underline" className="pass">
               Password Generator
-              </div>
+            </div>
 
             <p class="text-gray-700 text-base">
               A Password Generator is a simple yet highly useful project that focuses on creating secure, random
@@ -62,7 +62,7 @@ const App = () => {
         {/* .,.,.,.,.,.,.,.,.,new.,.,.,.,.,.,.,.,.,.,., */}
 
         <div className='second-image' class="max-w-sm  overflow-hidden shadow-lg m-6 rounded-2xl">
-          <img onClick={tictactoe} class="w-full h-60 cursor-pointer" src="../public/Screenshot_42.png" />
+          <img onClick={tictactoe} class="w-full h-60 cursor-pointer" src="/Screenshot_42.png" />
           <div class="px-6 py-4">
             <div onClick={tictactoe} class="font-bold text-xl mb-2 cursor-pointer underline" >
               Tic Tac Toe </div>
@@ -73,14 +73,14 @@ const App = () => {
             </p>
           </div>
         </div>
-        
+
         {/* .,.,.,.,.,.,.,.,.end.,.,.,.,.,.,.,.,.,.,., */}
 
 
         {/* .,.,.,.,.,.,.,.,.,new.,.,.,.,.,.,.,.,.,.,., */}
 
         <div className='third-image' class="max-w-sm overflow-hidden shadow-lg m-6 rounded-2xl">
-          <img onClick={bgchanger} class="w-full h-60 cursor-pointer" src="../public/Screenshot_12.png" />
+          <img onClick={bgchanger} class="w-full h-60 cursor-pointer" src="/Screenshot_12.png" />
           <div class="px-6 py-4">
             <div onClick={bgchanger} class="font-bold text-xl mb-2 cursor-pointer underline">Background Changer</div>
             <p class="text-gray-700 text-base">
