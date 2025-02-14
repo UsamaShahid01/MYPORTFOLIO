@@ -64,7 +64,7 @@ const Contact = () => {
       if (msg.value.length === 0) {
         msgError.innerHTML = 'message is required';
         return false;
-      } else if (!msg.value.match(/^[A-Za-z0-9\s.'-]{3,100}$/)) {
+      } else if (!msg.value.match(/^.{3,100}$/)) {
         msgError.innerHTML = 'msg is not correct';
         return false;
       } else {
@@ -77,6 +77,7 @@ const Contact = () => {
   const onSubmitForm = (e) => {
     e.preventDefault();
     isFormSubmit = true;
+    nameValidation();
     phoneValidation();
     emailValidation();
     msgValidation();
@@ -105,14 +106,17 @@ const Contact = () => {
     ).then(
       (result) => {
         console.log("Success:", result.text);
-        alert("Message sent successfully!");
+        // alert("Message sent successfully!");
       },
       (error) => {
         console.log("Error:", error.text);
-        alert("Failed to send message.");
+        // alert("Failed to send message.");
       }
     );
   };
+
+  
+  
 
   return (
     <div className='contact-page'>
@@ -165,6 +169,7 @@ const Contact = () => {
   );
 };
 export default Contact;
+
 
 
 
