@@ -303,7 +303,7 @@ button:hover {
 
 @media (max-width: 1024px) {
   .contact-page {
-    height:130vh;
+    min-height:86.8vh;
   }
   
   .buttonsubmit  {
@@ -623,7 +623,7 @@ button:hover {
 
 @media (max-width: 375px) {
   .contact-page {
-  min-height: 130vh;
+  min-height: 120vh;
   }
 
   .get-in-touch{
@@ -632,16 +632,18 @@ button:hover {
 
   .my-contact-details{
     font-size: 18px !important ;
+  } 
+
+  .email{
+    width:213px;
   }
 
-
-  
 }
 
 @media (max-width: 320px) {
 
   .contact-page {
-    min-height: 140vh;
+    min-height: 120vh;
     }
 
   .get-in-touch{
