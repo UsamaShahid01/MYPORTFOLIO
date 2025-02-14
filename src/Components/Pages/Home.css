@@ -143,6 +143,19 @@
 
   .child-one .usr {
     font-size: 24px;
-    margin-bottom:4px
+    margin-bottom:4px;
   }
 }
+
+@media (max-width: 320px) {
+  .child-one .welcome-to {
+    font-size: 18px;
+    margin-bottom:4px;
+
+  }
+  .child-one .usr {
+    font-size: 18px;
+    margin-bottom:4px;
+  }
+}
+

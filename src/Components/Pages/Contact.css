@@ -623,11 +623,87 @@ button:hover {
 
 @media (max-width: 375px) {
   .contact-page {
-    min-height:86.8vh;
+  min-height: 130vh;
   }
 
-  .section-one .get-in-touch{
-    font-size: 32px !important;
-    color:pink;
+  .get-in-touch{
+    font-size: 18px;
   }
+
+  .my-contact-details{
+    font-size: 18px !important ;
+  }
+
+
+  
+}
+
+@media (max-width: 320px) {
+
+  .contact-page {
+    min-height: 140vh;
+    }
+
+  .get-in-touch{
+    font-size: 18px !important;
+  }
+  .my-contact-details{
+    font-size: 18px !important;
+  }
+
+  .your-name{
+    margin-left:30px;
+  }
+
+  .your-name input {
+    width: 90%;
+    height:30px;
+
+  }
+
+  .your-name h1{
+    font-size:12px
+  }
+
+  .your-phonenumber{
+    margin-left:30px;
+  }
+
+  .your-phonenumber input {
+    width: 90%;
+    height:30px;
+
+  }
+
+  .your-phonenumber h1{
+    font-size:12px
+  }
+
+  .your-email{
+    margin-left:30px;
+  }
+
+  .your-email input {
+    width: 90%;
+    height:30px;
+  }
+
+  .your-email h1{
+    font-size:12px
+  }
+
+  .write-yourmessage{
+    margin-left:30px;
+  }
+
+  .write-yourmessage textarea {
+    width: 90%;
+    height:40px;
+
+  }
+
+  .write-yourmessage h1{
+    font-size:14px
+  }
+
 }
