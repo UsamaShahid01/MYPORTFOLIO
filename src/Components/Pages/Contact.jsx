@@ -77,7 +77,6 @@ const Contact = () => {
   const onSubmitForm = (e) => {
     e.preventDefault();
     isFormSubmit = true;
-    nameValidation();
     phoneValidation();
     emailValidation();
     msgValidation();
@@ -106,17 +105,14 @@ const Contact = () => {
     ).then(
       (result) => {
         console.log("Success:", result.text);
-        // alert("Message sent successfully!");
+        alert("Message sent successfully!");
       },
       (error) => {
         console.log("Error:", error.text);
-        // alert("Failed to send message.");
+        alert("Failed to send message.");
       }
     );
   };
-
-  
-  
 
   return (
     <div className='contact-page'>
@@ -151,7 +147,7 @@ const Contact = () => {
             </div>
             <div className='write-yourmessage'>
               <h1>Write your messages here</h1>
-              <textarea name="message" id="msgField" rows='2' placeholder='Write your message' className='Enter-your-message' onKeyUp={msgValidation}></textarea>
+              <textarea name="message" id="msgField" rows='2' placeholder='Write your message and email here' className='Enter-your-message' onKeyUp={msgValidation}></textarea>
               <span id='msgError'></span>
             </div>
             <div className='buttonsubmit'>
