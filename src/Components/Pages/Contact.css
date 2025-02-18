@@ -715,7 +715,7 @@ button:hover {
 
 }
 
-@media (max-width: 417px) {
+/* @media (max-width: 417px) {
   .contact-page {
   min-height: 120vh;
   }
@@ -731,5 +731,4 @@ button:hover {
   .email{
     width:213px;
   }
-
-}
+} */
