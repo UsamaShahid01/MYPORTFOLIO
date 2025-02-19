@@ -18,7 +18,7 @@
 }
 
 .child-one {
-  width: 50%;
+  width: 70%;
 }
 
 .child-one .welcome-to {
@@ -39,7 +39,7 @@
 .child-one p {
   padding: 4px;
   text-align: center;
-  margin: 50px;
+  margin:30px;
 }
 .getstarted button {
   color: white;
@@ -86,6 +86,13 @@
 }
 
 @media (max-width: 425px) {
+  .child-one .usr {
+    font-size: 24px;
+    margin-bottom:4px;
+  }
+  
+
+
   .child-one p {
     font-size: 12px;
   }
@@ -107,15 +114,12 @@
   }
 
   .child-one .welcome-to {
-    font-size: 28px;
+    font-size: 24px;
   }
 
-  .child-one .usr {
-    font-size: 28px;
-  }
 }
 
-@media (max-width: 375px) {
+/* @media (max-width: 375px) {
   .child-one p {
     font-size: 12px;
   }
@@ -145,17 +149,9 @@
     font-size: 24px;
     margin-bottom:4px;
   }
-}
+} */
 
 @media (max-width: 320px) {
-  .child-one .welcome-to {
-    font-size: 18px;
-    margin-bottom:4px;
-
-  }
-  .child-one .usr {
-    font-size: 18px;
-    margin-bottom:4px;
-  }
+  
 }
 
