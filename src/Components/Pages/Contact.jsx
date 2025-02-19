@@ -285,7 +285,7 @@ const Contact = () => {
             <div className='write-yourmessage'>
               <h1>Write your messages here</h1>
               <textarea name="message" rows='2' placeholder='Write your message' className='Enter-your-message' value={formData.message} onChange={handleChange}></textarea>
-              <span>{errors.message}</span>
+              <span className='msg-error'>{errors.message}</span>
             </div>
             <div className='buttonsubmit'>
               <button type="submit" className='submit'>Submit <i className="fa-solid fa-arrow-right"></i></button>
