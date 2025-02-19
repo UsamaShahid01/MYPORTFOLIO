@@ -377,8 +377,24 @@ button:hover {
 
 
 @media (max-width: 768px) {
-  .contact-page {
-    /* height:90vh; */
+  .email {
+    padding: 0px;
+    padding-top: 10px;
+  } 
+  .number {
+    padding: 4px;
+    padding-top: 10px;
+  } 
+  .address {
+    padding: 4px;
+    padding-top: 10px;
+  } 
+  .contain {
+    flex-direction: column;
+    align-items: center;
+  } 
+  .contact-page{
+    height:100%
   }
   .section-one h1,
   p {
@@ -470,29 +486,12 @@ button:hover {
 }
 
 @media (max-width: 425px) {
-  .contact-page{
-    height:100%
-  }
-  .contain {
-    flex-direction: column;
-    align-items: center;
-
-  } 
-  .email {
-    padding: 0px;
-    padding-top: 10px;
-  } 
-  .number {
-    padding: 4px;
-    padding-top: 10px;
-  } 
-  .address {
-    padding: 4px;
-    padding-top: 10px;
-  } 
-  .section-one {
+  .section-one{
     margin: 10px;
+    width:60%
   }
+  
+
    /* .your-name {
     display: flex;
     width: 100%;

@@ -95,20 +95,27 @@ border-radius:0.5rem;
   background-color: #f0f0f0;
 }
 
-  @media (max-width: 640px) {
-   .headings{
-     display:none;
-   }
-   .headings-icon{
-    display:block;
-   }
- }
+  
 
  @media (max-width: 425px) {
   .title{
     font-size:22px;
   }
-  
+  .headings{
+    display:none;
+  }
+  .headings-icon{
+   display:block;
+  }
+}
+
+@media (max-width: 768px) {
+  .headings{
+    display:none;
+  }
+  .headings-icon{
+   display:block;
+  }
 }
 
 
