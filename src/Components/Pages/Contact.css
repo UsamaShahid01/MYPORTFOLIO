@@ -579,14 +579,9 @@ button:hover {
    .popup img {
     width: 65px;
     margin-top: 2px;
-    /* border-radius: 10%; */
-    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); */
     position: absolute;
     right: 50%;
-    /* transform: translate(50%, 50%); */
-    /* left: 50%; */
     top: -60px;
-    /* padding:100px */
    }
    
    .popup h2 {
@@ -659,7 +654,6 @@ button:hover {
   .your-name input {
     width: 90%;
     height:30px;
-
   }
 
   .your-name h1{
@@ -673,7 +667,6 @@ button:hover {
   .your-phonenumber input {
     width: 90%;
     height:30px;
-
   }
 
   .your-phonenumber h1{
@@ -709,8 +702,10 @@ button:hover {
 
 }
 
-
-
 .msg-error{
 margin-top:-4px!important
+}
+
+.ticksign{
+  color:green 
 }
