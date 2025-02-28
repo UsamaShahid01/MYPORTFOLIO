@@ -168,6 +168,144 @@
 
 // .,.,.,.,.,.,.,new.,.,.,.,.,.,
 
+// import React, { useState, useRef } from 'react';
+// import "./Contact.css";
+// import emailjs from "@emailjs/browser";
+
+// const Contact = () => {
+//   const [isFormSubmit, setIsFormSubmit] = useState(false);
+//   const [formData, setFormData] = useState({ name: "", phone: "", email: "", message: "" });
+//   const [errors, setErrors] = useState({ name: "", phone: "", email: "", message: "" });
+//   const form = useRef();
+
+//   const validateField = (name, value) => {
+//     let error = "";
+//     if (!value.trim()) {
+//       error = `${name} is required`;
+//     } else {
+//       switch (name) {
+//         case "name":
+//           error = /^[A-Za-z\s.'-]{3,50}$/.test(value) ? "✔" : "Name is not correct";
+//           break;
+//         case "phone":
+//           error = /^\d{11}$/.test(value) ? "✔" : "Number is not correct";
+//           break;
+//         case "email":
+//           error = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(value) ? "✔" : "Email Invalid";
+//           break;
+//         case "message":
+//           error = /^.{3,100}$/.test(value) ? "✔" : "Message is not correct";
+//           break;
+//         default:
+//           break;
+//       }
+//     }
+//     return error;
+//   };
+
+//   const handleChange = (e) => {
+//     const { name, value } = e.target;
+//     setFormData({ ...formData, [name]: value });
+//     if (isFormSubmit) {
+//       setErrors({ ...errors, [name]: validateField(name, value) });
+//     }
+//   };
+
+//   const onSubmitForm = (e) => {
+//     e.preventDefault();
+//     setIsFormSubmit(true);
+//     const newErrors = {
+//       name: validateField("name", formData.name),
+//       phone: validateField("phone", formData.phone),
+//       email: validateField("email", formData.email),
+//       message: validateField("message", formData.message),
+//     };
+//     setErrors(newErrors);
+//     if (Object.values(newErrors).every((err) => err === "✔")) {
+//       openPopup();
+//       sendEmail();
+//     }
+//   };
+
+//   const openPopup = () => {
+//     document.getElementById("popup")?.classList.add("open-popup");
+//   };
+
+//   const closePopup = () => {
+//     document.getElementById("popup")?.classList.remove("open-popup");
+//   };
+
+//   const sendEmail = () => {
+//     emailjs.sendForm(
+//       "service_7bhm68w",
+//       "template_tohilmi",
+//       form.current,
+//       "oSdzCbWiTvQ4jut8b"
+//     ).then(
+//       () => {
+//         alert("Message sent successfully!");
+//       },
+//       () => {
+//         alert("Failed to send message.");
+//       }
+//     );
+//   };
+
+//   return (
+//     <div className='contact-page'>
+//       <div className='main-contact'>
+//         <p className='get-in-touch'>Get in touch</p>
+//       </div>
+//       <div className='contain'>
+//         <div className='section-one'>
+//           <div className='inner-section-one'>
+//             <h1 className='my-contact-details'>My Contact Details</h1>
+//             <p className='email'><i className="fa-solid fa-envelope-open-text"></i> usamashahidrandhawa1@gmail.com</p>
+//             <p className='number'><i className="fa-sharp fa-solid fa-phone"></i> +92-313-7793410</p>
+//             <p className='address'><i className="fa-solid fa-location-dot"></i> Faisalabad, Pakistan</p>
+//           </div>
+//         </div>
+//         <div className='section-two'>
+//           <form ref={form} onSubmit={onSubmitForm}>
+//             <div className='your-name'>
+//               <h1>Your Name</h1>
+//               <input type="text" placeholder='Enter your name' className='Enter-your-name' name='name' value={formData.name} onChange={handleChange} />
+//               <span>{errors.name}</span>
+//             </div>
+//             <div className='your-phonenumber'>
+//               <h1>Phone Number</h1>
+//               <input type="number" name="phone" placeholder="03701111444" className='Enter-your-mobile-number' value={formData.phone} onChange={handleChange} />
+//               <span>{errors.phone}</span>
+//             </div>
+//             <div className='your-email'>
+//               <h1>Your Email</h1>
+//               <input type="email" placeholder='test@gmail.com' className='Enter-your-emailid' name='email' value={formData.email} onChange={handleChange} />
+//               <span>{errors.email}</span>
+//             </div>
+//             <div className='write-yourmessage'>
+//               <h1>Write your messages here</h1>
+//               <textarea name="message" rows='2' placeholder='Write your message' className='Enter-your-message' value={formData.message} onChange={handleChange}></textarea>
+//               <span className='msg-error'>{errors.message}</span>
+//             </div>
+//             <div className='buttonsubmit'>
+//               <button type="submit" className='submit'>Submit <i className="fa-solid fa-arrow-right"></i></button>
+//             </div>
+//           </form>
+//           <div className="popup" id="popup">
+//             <h2>Thank You!</h2>
+//             <p>Developer will contact you soon. Thanks!</p>
+//             <button type="button" onClick={closePopup}>OK</button>
+//           </div>
+//         </div>
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default Contact;
+
+// .,.,.,.,.,.,.,.,.,.,latest new.,.,.,.,.,.,.,.,.,.,., 
+
 import React, { useState, useRef } from 'react';
 import "./Contact.css";
 import emailjs from "@emailjs/browser";
@@ -270,22 +408,22 @@ const Contact = () => {
             <div className='your-name'>
               <h1>Your Name</h1>
               <input type="text" placeholder='Enter your name' className='Enter-your-name' name='name' value={formData.name} onChange={handleChange} />
-              <span>{errors.name}</span>
+              <span style={{ color: errors.name === "✔" ? "green" : "red" }}>{errors.name}</span>
             </div>
             <div className='your-phonenumber'>
               <h1>Phone Number</h1>
               <input type="number" name="phone" placeholder="03701111444" className='Enter-your-mobile-number' value={formData.phone} onChange={handleChange} />
-              <span>{errors.phone}</span>
+              <span style={{ color: errors.phone === "✔" ? "green" : "red" }}>{errors.phone}</span>
             </div>
             <div className='your-email'>
               <h1>Your Email</h1>
               <input type="email" placeholder='test@gmail.com' className='Enter-your-emailid' name='email' value={formData.email} onChange={handleChange} />
-              <span>{errors.email}</span>
+              <span style={{ color: errors.email === "✔" ? "green" : "red" }}>{errors.email}</span>
             </div>
             <div className='write-yourmessage'>
               <h1>Write your messages here</h1>
               <textarea name="message" rows='2' placeholder='Write your message' className='Enter-your-message' value={formData.message} onChange={handleChange}></textarea>
-              <span className='msg-error'>{errors.message}</span>
+              <span className='msg-error' style={{ color: errors.message === "✔" ? "green" : "red" }}>{errors.message}</span>
             </div>
             <div className='buttonsubmit'>
               <button type="submit" className='submit'>Submit <i className="fa-solid fa-arrow-right"></i></button>
@@ -303,6 +441,7 @@ const Contact = () => {
 };
 
 export default Contact;
+
 
 
 
