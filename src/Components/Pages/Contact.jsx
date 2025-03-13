@@ -379,14 +379,15 @@ const Contact = () => {
       "template_tohilmi",
       form.current,
       "oSdzCbWiTvQ4jut8b"
-    ).then(
-      () => {
-        alert("Message sent successfully!");
-      },
-      () => {
-        alert("Failed to send message.");
-      }
-    );
+    )
+    // .then(
+    //   () => {
+    //     alert("Message sent successfully!");
+    //   },
+    //   () => {
+    //     alert("Failed to send message.");
+    //   }
+    // );
   };
 
   return (
